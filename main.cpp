@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     QQmlComponent component(&engine, QUrl(QStringLiteral("qrc:/Tab.qml")));
 
 
-    ifstream file("C:/Swetha/CPUInfo.txt");
+    ifstream file("/proc/cpuinfo");
 
     if( file.is_open() )
     {
